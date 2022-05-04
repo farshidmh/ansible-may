@@ -1,0 +1,14 @@
+---
+
+- hosts: webserver
+  gather_facts: no
+  become: yes
+  become_user: root
+
+  vars:
+    firstName: John
+
+  tasks:
+    - name: Do print
+      debug:
+        msg: "{{ firstName }}"
