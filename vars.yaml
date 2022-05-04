@@ -5,6 +5,11 @@
   become: yes
   become_user: root
 
+  vars_prompt:
+    - name: lastName
+      prompt: What is your last name?
+
+
   vars:
     firstName: John
 
