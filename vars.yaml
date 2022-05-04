@@ -18,3 +18,7 @@
     - name: Do print
       debug:
         msg: "{{ firstName }}"
+
+    - name: print the last name
+      debug:
+        msg: "{{ lastName }}"
